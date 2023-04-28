@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Post person</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<nav>
+    <a href="index.html">Get hello world</a>
+    <a href="get-persons.html">Get persons</a>
+    <a href="#" class="active">Post person</a>
+    <a href="post-persons-csv.html">Post persons csv</a>
+</nav>
+<div id="inputArea">
+    <label>Name:<input id="inputName" value="Ivan"></label>
+    <label>Surname:<input id="inputSurname" value="Ivanov"></label>
+</div>
+<div id="buttonsArea">
+    <button type="button" onclick="fetchPerson()">Post fetch</button>
+    <button type="button" onclick="xhrPerson()">Post xhr</button>
+    <button type="button" onclick="jQueryPerson()">Post jQuery</button>
+    <button type="button" onclick="axiosPerson()">Post axios</button>
+    <button type="button" onclick="cleanAnswerOnClick()">Clean answer</button>
+</div>
+<script src="js/post-person.js"></script>
+<script src="js/shared.js"></script>
+</body>
+</html>
